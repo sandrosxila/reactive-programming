@@ -23,3 +23,43 @@ Run the project:
 ```bash
 npm start
 ```
+
+---
+
+### How to start the chapter 4 project?
+
+Navigate to the chapter directory:
+
+```bash
+cd chapter-4
+```
+
+Install the node modules:
+
+```bash
+npm install
+```
+
+Run the project:
+
+```bash
+npm start
+```
+
+Open the second terminal window (or tab):
+
+```bash
+cd chapter-4/tweet-stream
+```
+
+Install the node modules:
+
+```bash
+npm install
+```
+
+Start the server:
+
+```bash
+npm start
+```

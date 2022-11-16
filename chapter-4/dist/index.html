@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spaceship Reactive!</title>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            #layout {
+                display: grid;
+                height: 100vh;
+                grid-template-areas:
+                    "map-container"
+                    "data-table";
+                grid-template-rows: 4fr 1fr;
+                grid-template-columns: 1fr;
+            }
+
+            #map-container {
+                grid-area: map-container;
+                overflow: auto;
+            }
+
+            #data-table {
+                grid-area: data-table;
+                overflow: auto;
+            }
+
+            #map {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="layout">
+            <div id="map-container">
+                <div id="map">
+
+                </div>
+            </div>
+            <div id="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Magnitude</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="quakes_info">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="bundle.js"></script>
+    </body>
+
+</html>
